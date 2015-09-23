@@ -7,10 +7,11 @@ $(document).ready(function() {
   });
 
   function playIntro() {
-  		$('.logo').hide().fadeIn(4500, function() {
-    	$(this).fadeOut(4000, function() {
-    	$('.instructions1').hide().fadeIn(2000);
-    	$(this).fadeOut(3000);
+  	$('.instructions1, .instructions2').hide();
+  		$('.logo').hide().fadeIn(3500, function() {
+    	$(this).fadeOut(1000, function() {
+    	$('.instructions1, .instructions2').hide().fadeIn(2000);
+    	$('.instructions1, .instructions2').fadeOut(1500);
 });
 });
 
